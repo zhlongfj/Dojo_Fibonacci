@@ -13,5 +13,11 @@ SCENARIO("Fibonacci", "Fibonacci") {
                 CHECK(Fibonacci().calculate(0) == 0);
             }
         }
+        WHEN("input 1 or 2") {
+            THEN("return 1") {
+                CHECK(Fibonacci().calculate(1) == 1);
+                CHECK(Fibonacci().calculate(2) == 1);
+            }
+        }
     }
 }
