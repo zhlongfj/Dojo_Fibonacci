@@ -19,5 +19,12 @@ SCENARIO("Fibonacci", "Fibonacci") {
                 CHECK(Fibonacci().calculate(2) == 1);
             }
         }
+
+        WHEN("input from 3 to 24") {
+            THEN("return pre plus pre pre") {
+                CHECK(Fibonacci().calculate(3) == 2);
+                CHECK(Fibonacci().calculate(24) == 46368);
+            }
+        }
     }
 }
