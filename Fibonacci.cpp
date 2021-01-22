@@ -12,5 +12,13 @@ int64_t Fibonacci::calculate(int index) {
         return 1;
     }
 
-    return calculate(index - 2) + calculate(index - 1);
+    int first = 1;
+    int second = 2;
+    int temp = 0;
+    for (int i = 3; i < index; ++i) {
+        temp = first;
+        first = second;
+        second = temp + first;
+    }
+    return second;
 }
