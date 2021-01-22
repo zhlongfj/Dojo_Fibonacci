@@ -4,6 +4,7 @@
 
 #define CATCH_CONFIG_MAIN
 #include "catch.hpp"
+#include "Fibonacci.h"
 
 SCENARIO("Fibonacci", "Fibonacci") {
     GIVEN("calculate Fibonacci") {
