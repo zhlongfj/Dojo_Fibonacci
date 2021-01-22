@@ -12,6 +12,10 @@ int64_t Fibonacci::calculate(int index) {
         return 1;
     }
 
+    return calculateCore(index);
+}
+
+int64_t Fibonacci::calculateCore(int index) const {
     int first = 1;
     int second = 2;
     int temp = 0;

@@ -12,6 +12,8 @@ class Fibonacci {
 
 public:
     int64_t calculate(int index);
+
+    int64_t calculateCore(int index) const;
 };
 
 
